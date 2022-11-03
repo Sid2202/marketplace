@@ -1,36 +1,56 @@
 import Image from 'next/image'
+import { ConnectButton } from '@rainbow-me/rainbowkit';
+  
 export default function Market() {
   return (
-    <div className="overflow-auto bg-cover bg-fixed bg-center bg-back h-screen text-white">
-        <div className="sticky backdrop-blur-md flex justify-between top-0 p-5 border-zinc-800 border-b-2">
-            <div className="mt-2">
+    <div className="text-white bg-drops bg-cover overflow-auto h-screen ">
+    {/* bg-cover bg-fixed bg-center bg-back */}
+    <div className="flex flex-col items-center justify-center">
+        <div className="m-4 p-2 w-1/2 flex justify-between rounded-full backdrop-blur-md bg-gray-900">
+            <div className="px-4 mt-6">
                 <Image 
                     src="/../public/assets/logo.png"
-                    width={150}
+                    width={90}
                     height={90}
                     alt="logo"
                 />
             </div>
-            <div className="text-2xl font-light font-serif">
-                Recipes
-            </div>
-            <div className="text-xl font-light font-serif">
-                0xcasdf...
+            <div className="p-2">
+                <ConnectButton label="Connect" accountStatus="avatar" chainStatus="none" />
             </div>
         </div>
 
-        <div className="flex flex-col justify-center items-center">
-            <div className="p-8 flex flex-col items-center">
-                <div className="p-2 text-3xl font-bold font-serif">
+        <div className="h-screen flex justify-center">
+            <div className="flex flex-col items-center m-20">
+                <div className="p-2 mt-10 text-6xl font-bold font-serif">
                     Web3 Recipe Marketplace
                 </div>
                 <div className="p-2">
-                A suite of plug and play modules that leverage the best technologies web3 has to offer.
+                    A suite of plug and play modules that leverage the best technologies web3 offers.
+                </div>
+                <div className="mt-12">
+                    <div className="bg-slate-900 rounded-full p-3 px-10 font-mono">
+                        npm i hyper3-core
+                    </div>
+                    
+                </div>
+                <div className="flex flex-col items-center mt-10">
+                    <div className="">
+                        Create ZK identity proofs and integrate with easy to use web3 modules in your dapp in 
+                    </div>
+                    <div className="p-1 font-bold">
+                        {'<'}2 lines of code
+                    </div>
                 </div>
             </div>
-            <div className="flex flex-wrap flex-row overflow-auto m-10">
-                <div className="m-2 w-1/4 flex flex-col border-gray-400 border-2 rounded-xl">
+        </div>
+
+        <div className="m-0 bg-cover bg-fixed bg-center bg-back flex flex-col justify-center items-center">
+            
+            <div className="flex flex-wrap flex-row overflow-auto m-10 py-20">
+                <div class="zoom" className="m-2 w-1/4 flex flex-col border-gray-400 border-2 rounded-xl" >
                     <div className="flex justify-center bg-black">
+                        
                         <Image 
                             src="/../public/assets/auth.png"
                             width={200}
@@ -39,7 +59,7 @@ export default function Market() {
                             className="rounded-xl"
                         />
                     </div>
-                    <div className="p-2 border-gray-400 border-t-2 ">
+                    <div className="p-2 backdrop-blur-md border-gray-400 border-t-2 ">
                         <div className="p-1 text-2xl font-bold">
                             Bio-Auth
                         </div>
@@ -49,7 +69,7 @@ export default function Market() {
                     </div>
                 </div>
 
-                <div className="m-2 w-1/4 flex flex-col border-gray-400 border-2 rounded-xl">
+                <div class="zoom" className="m-2 w-1/4 flex flex-col border-gray-400 border-2 rounded-xl">
                     <div className="flex justify-center bg-black">
                         <Image 
                             src="/../public/assets/kyc.png" 
@@ -58,7 +78,7 @@ export default function Market() {
                             alt="kyc"
                         />
                     </div>
-                    <div className="p-2 border-gray-400 border-t-2 ">
+                    <div className="p-2 backdrop-blur-md border-gray-400 border-t-2 ">
                         <div className="p-1 text-2xl font-bold">
                             ZK-kyc
                         </div>
@@ -68,7 +88,7 @@ export default function Market() {
                     </div>
                 </div>
 
-                <div className="m-2 w-1/4 flex flex-col border-gray-400 border-2 rounded-xl">
+                <div class="zoom" className="m-2 w-1/4 flex flex-col border-gray-400 border-2 rounded-xl">
                     <div className="flex justify-center bg-black">
                         <Image 
                             src="/../public/assets/signx.png" 
@@ -77,7 +97,7 @@ export default function Market() {
                             alt="signx"
                         />
                     </div>
-                    <div className="p-2 border-gray-400 border-t-2 ">
+                    <div className="p-2 backdrop-blur-md border-gray-400 border-t-2 ">
                         <div className="p-1 text-2xl font-bold">
                             SignX
                         </div>
@@ -87,7 +107,7 @@ export default function Market() {
                     </div>
                 </div>
 
-                <div className="m-2 w-1/4 flex flex-col border-gray-400 border-2 rounded-xl">
+                <div class="zoom" className="m-2 w-1/4 flex flex-col border-gray-400 border-2 rounded-xl">
                     <div className="flex justify-center bg-black">
                         <Image 
                             src="/../public/assets/escrow.png" 
@@ -96,7 +116,7 @@ export default function Market() {
                             alt="escrow"
                         />
                     </div>
-                    <div className="p-2 border-gray-400 border-t-2 ">
+                    <div className="p-2 backdrop-blur-md border-gray-400 border-t-2 ">
                         <div className="p-1 text-2xl font-bold">
                             Escrow
                         </div>
@@ -107,7 +127,7 @@ export default function Market() {
                 </div>
             </div>
         </div>
-        
+    </div>
     </div>
   )
 }
