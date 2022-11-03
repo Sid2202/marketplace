@@ -9,7 +9,7 @@ export default function Market() {
         <div className="m-4 p-2 w-1/2 flex justify-between rounded-full backdrop-blur-md bg-gray-900">
             <div className="px-4 mt-6">
                 <Image 
-                    src="/../public/assets/logo.png"
+                    src="https://i.postimg.cc/NjWKX5mM/logo.png"
                     width={90}
                     height={90}
                     alt="logo"
@@ -52,7 +52,7 @@ export default function Market() {
                     <div className="flex justify-center bg-black">
                         
                         <Image 
-                            src="/../public/assets/auth.png"
+                            src="https://i.postimg.cc/Zn339pDJ/auth.png"
                             width={200}
                             height={100}
                             alt="Auth"
@@ -72,7 +72,7 @@ export default function Market() {
                 <div class="zoom" className="m-2 w-1/4 flex flex-col border-gray-400 border-2 rounded-xl">
                     <div className="flex justify-center bg-black">
                         <Image 
-                            src="/../public/assets/kyc.png" 
+                            src="https://i.postimg.cc/RhcRkkm1/kyc.png"
                             width={200}
                             height={100}
                             alt="kyc"
@@ -91,7 +91,7 @@ export default function Market() {
                 <div class="zoom" className="m-2 w-1/4 flex flex-col border-gray-400 border-2 rounded-xl">
                     <div className="flex justify-center bg-black">
                         <Image 
-                            src="/../public/assets/signx.png" 
+                            src="https://i.postimg.cc/mkG3ym9P/signx.png" 
                             width={200}
                             height={100}
                             alt="signx"
@@ -110,7 +110,7 @@ export default function Market() {
                 <div class="zoom" className="m-2 w-1/4 flex flex-col border-gray-400 border-2 rounded-xl">
                     <div className="flex justify-center bg-black">
                         <Image 
-                            src="/../public/assets/escrow.png" 
+                            src="https://i.postimg.cc/63FbJVvK/escrow.png" 
                             width={200}
                             height={100}
                             alt="escrow"
